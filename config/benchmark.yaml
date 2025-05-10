@@ -1,0 +1,24 @@
+defaults:
+  - vehicle: default
+  - envs: default 
+  - planner: pure_pursuit
+  - reward: ???
+  - agent: sac
+
+ckpt: ???
+
+## 2d scan buffer
+scan_n: 2
+dowansample_beam: 60
+
+num_steps: 100000
+
+## 可視化設定
+render: True
+render_mode: "human" ## human or human_fast
+
+benchmark_dir: ./benchmarks/${now:%Y-%m-%d}/${now:%H-%M-%S}/
+
+hydra:
+  run:
+    dir: ./outputs/benchmark/${now:%Y-%m-%d}/${now:%H-%M-%S}
