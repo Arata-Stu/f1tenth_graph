@@ -9,6 +9,7 @@ scipy
 
 ## grapg
 networkx
+torch_geometric
 
 pandas
 scikit-image
